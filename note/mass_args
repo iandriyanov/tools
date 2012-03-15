@@ -1,0 +1,3 @@
+find /www/file1.loadup.ru/video/ -type f -print0 | xargs -0 chmod 644
+
+find /www/file1.loadup.ru/video/ -type d -print0 | xargs -0 chmod 775

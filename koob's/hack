@@ -1,0 +1,57 @@
+Nmap
+Network Mapper это инструмент с открытым исходным кодом для использования в аудите безопасности. Хотя и был сделан для быстрого сканирования больших сетей, однако отлично работает для одного хоста. Nmap работает на многих типах компьютерных систем, и поставляется как в GUI, так и консольной версии.
+
+Nikto
+Это сканер выполняющий тесты веб-серверов, используется множество параметров, включая тысячи потенциально опасные приложений CGI.
+
+THC Amap
+Это инструмент для тестирования на возможное проникновение. Надежный, быстрый, работает независимо от протокола TCP/UDP.
+
+Ethereal
+Этот инструмент используется администраторами сетей по всему миру, для анализа, поиска неисправностей. Как анализатор протоколов имеет все стандартные функции.
+
+THC Hydra
+Взломщик паролей к различным сервисам — ftp, POP3, IMAP, Telnet, HTTP Auth, NNTP, VNC, ICQ, PCNFS, CISCO и др. С помощью этой утилиты вы можете атаковать несколько сервисов одновременно. Модульность.
+
+Metasploit framework
+Довольно продвинутая платформа с открытым исходным кодом, предназначена для тестирования, использования и разработки вредоносного кода.
+
+John the Ripper
+Свободная программа предназначенная для восстановления паролей по их хешам. Ищет слабые пароли, и применяет хэш-типы.
+
+Nessus
+Пожалуй самый известный сканер уязвимостей в мире. Используется более чем в 75000 компаний по всему миру для аудита критических приложений и устройств.
+
+IRPAS
+Инструмент задействует множество мелких инструментов и сценариев, используя стандартные протоколы.
+
+Rainbowcrack
+Старомодный взломщик с грубой силой, использует все возможные комбинации во время одной сессии.
+
+oclHashcat
+Продвинутый брут для востановления паролей, в своей работе использует GPGPU для ускорения процесса подбора. Умеет подбирать хэши MD5, SHA1, NTLM, кэшированных паролей домена и паролей баз данных MySQL. Поддерживаются видеокарты как на базе AMD (OpenCL, требуется Catalyst 10.12 и ATI Stream SDK), так и NVIDIA (CUDA, требуется драйвер 260.хх и новее), программа работает в Windows и Linux
+
+
+
+
+
+
+
+
+
+-==-=-=-=-=-=-=-=-=-==-
+
+System off CtrlAltGel
+
+
+
+
+The action taken for CTRL-ALT-DEL is defined in /etc/inittab and if we will look in that file we will see a line similar to the one from bellow (taken from a Debian system):
+# What to do when CTRL-ALT-DEL is pressed.
+ca:12345:ctrlaltdel:/sbin/shutdown -t1 -a -r now
+On other Linux distributions this might look a little differentâ€¦ anyway we are looking for the line containing ctrlaltdel in /etc/inittab. Here is another example: on RedHat based systems this line will look like:
+ca::ctrlaltdel:/sbin/shutdown -t3 -r now
+If we want to disable this action we only have to change this line. We can delete it, comment it, or even replace it with something like:
+ca:12345:ctrlaltdel:/bin/echo "CTRL-ALT-DEL is disabled"
+After making any changes to the inittab file, you will have to tell init to reload it, in order to activate the changes. To do that, simply run as root:
+init q
