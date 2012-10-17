@@ -1,6 +1,0 @@
-http://www.gentoo.org/doc/en/gentoo-x86+raid+lvm2-quickinstall.xml
-
-http://xgu.ru/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D0%B9_RAID_%D0%B2_Linux
-
-mdadm --detail --scan >> /etc/mdadm/mdadm.conf
-
