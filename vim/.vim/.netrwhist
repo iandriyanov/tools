@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/plushka/git/ulskpal/fa_test/.git'
+let g:netrw_dirhist_2='/home/plushka/perenos/coding/svn/trunk/.svn'
+let g:netrw_dirhist_3='/home/plushka/git/netstream/svn/trunk'
+let g:netrw_dirhist_4='/home/plushka/git/netstream/svn/trunk/override'
+let g:netrw_dirhist_5='/home/plushka/git/netstream/svn/trunk'
+let g:netrw_dirhist_6='/home/plushka/git/netstream/svn/trunk/override'
+let g:netrw_dirhist_7='/home/plushka/git/netstream/svn/trunk/override/ivi-plus'
+let g:netrw_dirhist_8='/home/plushka/git/netstream/svn/trunk/override/ivi-plus/test'
